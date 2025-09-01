@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Saikat News Hub</title>
+  <meta name="description" content="Saikat News Hub — fast, clean, and modern news portal." />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="./">
+        <img class="brand-logo" src="assets/logo.svg" alt="Saikat News Hub logo">
+        <span>Saikat News Hub</span>
+      </a>
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </label>
+      <nav class="menu">
+        <a href="#home">Home</a>
+        <a href="#latest">News</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Breaking stories. Clean design.</h1>
+          <p>Welcome to <strong>Saikat News Hub</strong> — your daily dose of technology, world affairs, and entertainment, delivered with speed and clarity.</p>
+          <div class="hero-actions">
+            <a href="#latest" class="btn primary">Read Latest</a>
+            <a href="#about" class="btn">About Us</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop" alt="Newsroom" loading="lazy">
+          <div class="badge">Top Picks</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="latest" class="section container">
+      <div class="section-head">
+        <h2>Latest News</h2>
+        <div class="filters">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="tech">Tech</button>
+          <button class="chip" data-filter="world">World</button>
+          <button class="chip" data-filter="entertainment">Entertainment</button>
+        </div>
+      </div>
+
+      <div class="grid">
+        <!-- Card 1 -->
+        <article class="card" data-category="tech">
+          <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=1200&auto=format&fit=crop" alt="Gadgets">
+          <div class="card-body">
+            <a href="#" class="tag">Tech</a>
+            <h3>Next‑gen chips power smarter devices</h3>
+            <p>Chipmakers unveil power‑efficient processors that boost on‑device AI while keeping battery drain minimal.</p>
+            <div class="meta">
+              <span>5 min read</span>
+              <span>•</span>
+              <time>Sep 1, 2025</time>
+            </div>
+          </div>
+        </article>
+        <!-- Card 2 -->
+        <article class="card" data-category="world">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="World">
+          <div class="card-body">
+            <a href="#" class="tag">World</a>
+            <h3>Global markets rally on positive outlook</h3>
+            <p>Analysts cite resilient consumer demand and moderating inflation as key drivers in today’s market bounce.</p>
+            <div class="meta">
+              <span>4 min read</span>
+              <span>•</span>
+              <time>Sep 1, 2025</time>
+            </div>
+          </div>
+        </article>
+        <!-- Card 3 -->
+        <article class="card" data-category="entertainment">
+          <img src="https://images.unsplash.com/photo-1497032205916-ac775f0649ae?q=80&w=1200&auto=format&fit=crop" alt="Entertainment">
+          <div class="card-body">
+            <a href="#" class="tag">Entertainment</a>
+            <h3>Indie film festival celebrates fresh voices</h3>
+            <p>From debut directors to experimental shorts, this year’s lineup puts storytelling front and center.</p>
+            <div class="meta">
+              <span>6 min read</span>
+              <span>•</span>
+              <time>Aug 31, 2025</time>
+            </div>
+          </div>
+        </article>
+        <!-- Card 4 -->
+        <article class="card" data-category="tech">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=1200&auto=format&fit=crop" alt="AI">
+          <div class="card-body">
+            <a href="#" class="tag">Tech</a>
+            <h3>AI assistants get better at context</h3>
+            <p>New models promise fewer hallucinations and better task handling, making virtual help truly helpful.</p>
+            <div class="meta">
+              <span>3 min read</span>
+              <span>•</span>
+              <time>Aug 30, 2025</time>
+            </div>
+          </div>
+        </article>
+        <!-- Card 5 -->
+        <article class="card" data-category="world">
+          <img src="https://images.unsplash.com/photo-1444653614773-995cb1ef9efa?q=80&w=1200&auto=format&fit=crop" alt="City">
+          <div class="card-body">
+            <a href="#" class="tag">World</a>
+            <h3>Cities reimagine public spaces</h3>
+            <p>More green corridors and pedestrian‑first zones are reshaping how people move, meet, and unwind.</p>
+            <div class="meta">
+              <span>5 min read</span>
+              <span>•</span>
+              <time>Aug 29, 2025</time>
+            </div>
+          </div>
+        </article>
+        <!-- Card 6 -->
+        <article class="card" data-category="entertainment">
+          <img src="https://images.unsplash.com/photo-1497032628192-86f99bcd76bc?q=80&w=1200&auto=format&fit=crop" alt="Music">
+          <div class="card-body">
+            <a href="#" class="tag">Entertainment</a>
+            <h3>Streaming platforms test new formats</h3>
+            <p>Immersive audio and interactive episodes hint at how we’ll binge stories next year.</p>
+            <div class="meta">
+              <span>4 min read</span>
+              <span>•</span>
+              <time>Aug 28, 2025</time>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container">
+        <h2>About Saikat News Hub</h2>
+        <p>We’re an independent, ad‑light news portal focused on clarity, speed, and credibility. Our team curates headlines and long‑reads across tech, world, and entertainment — optimized for mobile readers.</p>
+        <ul class="features">
+          <li>Fast & SEO‑friendly</li>
+          <li>Clean typography</li>
+          <li>Mobile‑first layout</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact">
+        <div>
+          <h2>Contact</h2>
+          <p>Email: <a href="mailto:hello@saikatnewshub.example">hello@saikatnewshub.example</a></p>
+          <p>Facebook: <a href="#" rel="noopener">fb.com/saikatnewshub</a></p>
+        </div>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks! This demo form is static.');">
+          <div class="row">
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Email address" required>
+          </div>
+          <textarea rows="4" placeholder="Message"></textarea>
+          <button class="btn primary" type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Saikat News Hub. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
